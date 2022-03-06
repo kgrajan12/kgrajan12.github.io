@@ -1,0 +1,25 @@
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+#intro {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: radial-gradient(white, antiquewhite, rgb(248, 217, 176));
+    /* background: radial-gradient(white, rgb(224 215 78)) */
+}
+
+body {
+    background-color: antiquewhite !important;
+}
+
+img#profileImg {
+    border-radius: 150px;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    margin: 50px;
+}
