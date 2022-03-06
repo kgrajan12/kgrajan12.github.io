@@ -30,7 +30,7 @@ const info = {
     name: 'Gajarajan K',
     ...experiances[0],
     experianceYear: experiance.years,
-    experianceMonth: experiance.months
+    experianceMonth: experiance.months ? `${experiance.months} months` : ''
 }
 
 function setValue(field) {
