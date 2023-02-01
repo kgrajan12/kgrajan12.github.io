@@ -30,7 +30,7 @@ const info = {
     name: 'Gajarajan K',
     ...experiances[0],
     experianceYear: experiance.years,
-    experianceMonth: experiance.months ? `${experiance.months} months` : ''
+    experianceMonth: experiance.months ? `${experiance.months} Month${experiance.months == 1 ? '' : 's'}` : ''
 }
 
 function setValue(field) {
@@ -53,3 +53,11 @@ Object.keys(info).forEach(setValue);
 console.log(experiance);
 console.log(info.experianceYear, info.experianceMonth);
 
+function toggleHeader() {
+    var navbarText = document.getElementById('navbarText');
+    // if(screen.width <= 991) {
+    //     setTimeout(function() {
+    //         menu.click();
+    //     }, 1000);
+    // }
+}
