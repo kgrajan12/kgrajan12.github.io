@@ -10,7 +10,11 @@
     flex-direction: column;
     background: radial-gradient(white, antiquewhite, rgb(248, 217, 176));
 }
-#intro > h1, h2, h3, h4 {
+
+#intro>h1,
+h2,
+h3,
+h4 {
     text-align: center;
 }
 
@@ -18,10 +22,124 @@ body {
     background-color: antiquewhite !important;
 }
 
-img#profileImg {
-    border-radius: 150px;
+img.bigImg {
     width: 300px;
     height: 300px;
     padding-bottom: 10px;
     margin-bottom: 50px;
+}
+
+img.smallImg {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+img.profileImg {
+    border-radius: 150px;
+}
+
+.button {
+    display: inline-block;
+    color: #f44336;
+    background-color: #FFFFFF;
+    border: 1px solid #f44336;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 20px;
+    opacity: 0.9;
+    border-radius: 10px;
+}
+
+.button:hover {
+    background-color: #f44336;
+    color: #FFFFFF;
+}
+
+.logo {
+    display: flex;
+    margin-right: 20px;
+}
+
+.logo h3 {
+    margin: auto;
+}
+
+.icon {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* side bar styles */
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: #fff5e6f7;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.2s;
+    /* 0.5 second transition effect to slide in the sidenav */
+    z-index: 1021;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.1s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+#back-drop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1113;
+    z-index: 1021;
+}
+
+#header-menu>a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #ae7129;
+    border-radius: 25px;
+}
+
+#header-menu>a:hover {
+    background-color: #ae7129c4;
+    color: #fff
 }

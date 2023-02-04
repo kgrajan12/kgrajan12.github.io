@@ -30,12 +30,26 @@ const info = {
     name: 'Gajarajan K',
     ...experiances[0],
     experianceYear: experiance.years,
-    experianceMonth: experiance.months ? `${experiance.months} Month${experiance.months == 1 ? '' : 's'}` : ''
+    experianceMonth: experiance.months ? `${experiance.months} Month${experiance.months == 1 ? '' : 's'}` : '',
+    profileImg: "https://avatars.githubusercontent.com/u/31614308"
 }
 
 function setValue(field) {
     var doc = document.getElementById(field);
-    doc && (doc.innerText = info[field]);
+    var docs = document.getElementsByClassName(field);
+    if(doc) {
+            doc.innerText = info[field];
+    }
+    if(docs.length) {
+        for(const doc of docs) {
+            if(doc.tagName == 'IMG') {
+                doc.src = info[field];
+                doc.alt = info.name;
+            } else {
+                doc.innerText = info[field];
+            }
+        }
+    }
 }
 
 function calculateExp() {
@@ -50,14 +64,19 @@ function calculateExp() {
 }
 
 Object.keys(info).forEach(setValue);
+
 console.log(experiance);
 console.log(info.experianceYear, info.experianceMonth);
 
-function toggleHeader() {
-    var navbarText = document.getElementById('navbarText');
-    // if(screen.width <= 991) {
-    //     setTimeout(function() {
-    //         menu.click();
-    //     }, 1000);
-    // }
-}
+
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById('back-drop').classList.remove('d-none');
+  }
+  
+  /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById('back-drop').classList.add('d-none');
+  }
