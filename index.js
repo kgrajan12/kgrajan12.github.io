@@ -63,6 +63,25 @@ function calculateExp() {
     return exp._data;
 }
 
+const menu = [
+    {
+        href: '#',
+        menu: 'Home'
+    }, {
+        href: '#my-journey',
+        menu: "My Journey"
+    }
+]
+
+menu.forEach(item => {
+    const menuElm = document.getElementsByClassName('menu');
+    for(const elm of menuElm) {
+        const link = document.createElement('a');
+        link.href = item.href;
+        link.innerText = item.menu;
+        elm.appendChild(link);
+    }
+});
 Object.keys(info).forEach(setValue);
 
 console.log(experiance);
