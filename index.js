@@ -20,12 +20,12 @@ const experiances = [
     exitDate: "2020-03-31",
     position: "Software Engineer",
   },
-  {
+  /*{
     company: "Mymoon Software",
     joiningDate: "2017-12-01",
     exitDate: "2018-05-31",
     position: "Software Developer Intern",
-  },
+  },*/
 ];
 const projects = [];
 const experiance = calculateExp();
