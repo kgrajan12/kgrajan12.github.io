@@ -3,9 +3,15 @@ const CONST = {
 };
 const experiances = [
   {
+    company: "Photon Interactive Pvt Ltd",
+    joiningDate: "2023-06-16",
+    exitDate: CONST.PRESENT,
+    position: "Senior Software Engineer",
+  },
+  {
     company: "FOODHUB",
     joiningDate: "2022-01-01",
-    exitDate: CONST.PRESENT,
+    exitDate: "2023-06-14",
     position: "Senior Software Engineer",
   },
   {
@@ -20,17 +26,17 @@ const experiances = [
     exitDate: "2020-03-31",
     position: "Software Engineer",
   },
-  /*{
-    company: "Mymoon Software",
-    joiningDate: "2017-12-01",
-    exitDate: "2018-05-31",
-    position: "Software Developer Intern",
-  },*/
+  // {
+  //   company: "Mymoon Software",
+  //   joiningDate: "2017-12-01",
+  //   exitDate: "2018-05-31",
+  //   position: "Software Developer Intern",
+  // },
 ];
 const projects = [];
 const experiance = calculateExp();
 const info = {
-  name: "Gajarajan K",
+  name: "Gajarajan Kaliyappan",
   ...experiances[0],
   experianceYear: experiance.years,
   experianceMonth: experiance.months
